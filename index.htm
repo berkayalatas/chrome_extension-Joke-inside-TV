@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+      html {
+        background: rgb(15, 67, 68);
+        background: linear-gradient(
+          0deg,
+          rgba(15, 67, 68, 1) 0%,
+          rgba(48, 49, 68, 1) 36%,
+          rgba(48, 49, 68, 1) 69%,
+          rgba(16, 74, 75, 1) 100%
+        );
+      }
+
+      body {
+        width: 80%;
+        min-width: 600px;
+        margin: 32px auto;
+        text-align: center;
+      }
+
+      section {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+      }
+
+      .joke {
+        margin-top: 50px;
+        padding: 5px;
+      }
+
+      .joke p{
+        padding: 5px;
+        font-size: 16px;
+      }
+
+      .television {
+        width: 600px;
+        margin: 0 auto;
+      }
+
+      .television__top {
+        width: 30%;
+        margin: auto;
+        position: relative;
+      }
+
+      .television__antenna {
+        width: 5px;
+        height: 80px;
+        background-color: #141414;
+        margin-bottom: -10px;
+      }
+
+      .television__antenna--left {
+        transform: rotate(-30deg);
+        float: left;
+      }
+
+      .television__antenna--right {
+        transform: rotate(30deg);
+        float: right;
+      }
+
+      .television__antenna__base {
+        height: 30px;
+        background-color: #141414;
+        border-top-left-radius: 48px;
+        border-top-right-radius: 48px;
+        margin-bottom: 10px;
+        clear: both;
+        position: relative;
+        z-index: 2;
+      }
+
+      .television__center {
+        position: relative;
+        z-index: 2;
+        width: 500px;
+        height: 350px;
+        background-color: #7a4e27;
+        border: solid 3px #eef4c4;
+        box-shadow: -10px -10px #5f3d1f;
+        border-radius: 48px;
+        margin: 0 auto;
+        padding: 10px 15px;
+      }
+
+      .television__screen {
+        width: 470px;
+        height: 340px;
+        background-color: #eed5b6;
+        border-radius: 48px;
+        float: left;
+      }
+
+      .television__channel a:active {
+        box-shadow: inset rgba(255, 255, 255, 0.6) 0 2px 2px,
+          inset rgba(0, 0, 0, 0.15) 0 -2px 5px,
+          /* inner shadow */ rgba(100, 100, 100, 0.6) 0 2px 1px,
+          rgba(100, 100, 100, 0.6) 0 2px 1px; /* color border */
+      }
+
+      .television__base {
+        width: 60%;
+        margin: auto;
+      }
+
+      .television__base:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+
+      .television__foot {
+        width: 15px;
+        height: 60px;
+        margin-top: -20px;
+        background-color: #7d4d25;
+        border: solid 3px #eed5b6;
+        border-radius: 48px;
+      }
+
+      .television__foot--left {
+        transform: rotate(30deg);
+        float: left;
+      }
+
+      .television__foot--right {
+        transform: rotate(-30deg);
+        float: right;
+      }
+
+      /*get new joke button */
+      .btn_joke {
+        position: relative;
+        top: 70px;
+        color: white;
+        font-size: 20px;
+        background-color: #a36b39;
+        text-align: center;
+        width: 150px;
+        height: 60px;
+        border-radius: 12px;
+        cursor: pointer;
+        border: 1px solid #141414;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="television">
+        <div class="television__top">
+          <div class="television__antenna television__antenna--left"></div>
+          <div class="television__antenna television__antenna--right"></div>
+          <div class="television__antenna__base"></div>
+        </div>
+        <!-- television__top -->
+        <div class="television__center">
+          <div class="television__screen">
+            <div class="joke">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium iste doloremque ullam culpa numquam perspiciatis.
+              </p>
+            </div>
+            <button class="btn_joke">Get New Joke</button>
+            <!-- television__screen -->
+          </div>
+
+          <!-- television__channels-wrapper -->
+        </div>
+        <!-- television__center -->
+        <div class="television__base">
+          <div class="television__foot television__foot--left"></div>
+          <div class="television__foot television__foot--right"></div>
+        </div>
+        <!-- television__base -->
+      </div>
+      <!-- .television -->
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
