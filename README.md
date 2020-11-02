@@ -1,7 +1,7 @@
 # chrome_extension-Joke_inside_TV
 
 ## In pop up window every time clicked the button see different jokes inside the TV. 
-### Jokes are coming from API.
+### Jokes are fetching from API.
  <br>
  
 ![first](https://user-images.githubusercontent.com/59448862/97803038-9bb59300-1c58-11eb-9924-28c9687e673c.PNG)
